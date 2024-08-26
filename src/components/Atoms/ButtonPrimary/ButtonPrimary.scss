@@ -1,0 +1,19 @@
+@use '../../../styles/partials/' as p;
+
+.btnPrimary {
+    @include p.button-layout;
+    border: none;
+    background-color: p.$primaryColor--indigo;
+
+
+    &__label {
+        @extend .heading3;
+        color: p.$primaryColor--white;
+    }
+
+    &:hover {
+        background-color: p.$backgroundColor--graphite;
+    }
+
+
+}

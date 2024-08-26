@@ -1,0 +1,17 @@
+@use '../../../styles/partials/' as p;
+
+.btnSecondary {
+    @include p.button-layout;
+    border: 1px solid p.$secondaryColor--cloud;
+    background-color: p.$primaryColor--white;
+
+    &__label {
+        @extend .heading3;
+        color: p.$secondaryColor--slate;
+    }
+
+    &:hover {
+        color: p.$primaryColor--indigo;
+        border: 1px solid p.$primaryColor--indigo;
+    }
+}

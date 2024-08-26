@@ -1,0 +1,27 @@
+@use '../../../styles/partials/' as p;
+
+.radio {
+    border: none;
+    display: flex;
+    gap: p.$size-4;
+    padding: 0;
+    margin: 0;
+
+    &--legend {
+        @extend h3
+    }
+
+    &--wrapper {
+        display: flex;
+        gap: p.$size-16
+    }
+
+    &--group{
+        display: flex;
+        gap: p.$size-8;
+    }
+
+    &--label {
+        @extend .p2
+    }
+}

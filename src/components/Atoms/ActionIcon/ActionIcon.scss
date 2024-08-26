@@ -1,0 +1,6 @@
+@use '../../../styles/partials/' as p;
+
+.img-container {
+    width: p.$size-24;
+    height: p.$size-24;
+}

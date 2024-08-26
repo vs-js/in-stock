@@ -1,0 +1,17 @@
+@use '../../../styles/partials/' as p;
+
+.btnDelete {
+    @include p.button-layout;
+    border: none;
+    background-color: p.$supportingColor--red;
+
+
+    &__label {
+        @extend .heading3;
+        color: p.$primaryColor--white;
+    }
+
+    &:hover {
+        background-color: p.$backgroundColor--graphite;
+    }
+}

@@ -1,0 +1,84 @@
+@use "functions" as f;
+@use "colors" as c;
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap');
+
+  // Font Family
+      $font: Titillium, sans-serif;
+
+  // Font weight
+      $font-bold: 600;
+      $font-reg: 400;
+  
+  // Font Size
+      $font-32: f.px-to-rem(32);
+      $font-28: f.px-to-rem(28);
+      $font-24: f.px-to-rem(24);
+      $font-20: f.px-to-rem(20);
+      $font-16: f.px-to-rem(16);
+      $font-15: f.px-to-rem(15);
+      $font-14: f.px-to-rem(14);
+      $font-13: f.px-to-rem(13);
+      $font-12: f.px-to-rem(12);
+      $font-11: f.px-to-rem(11); 
+      
+  // Line Height 
+      $lineH-40: f.px-to-rem(40);
+      $lineH-36: f.px-to-rem(36);
+      $lineH-32: f.px-to-rem(32);
+      $lineH-28: f.px-to-rem(28);
+      $lineH-26: f.px-to-rem(26);
+      $lineH-22: f.px-to-rem(22);
+      $lineH-20: f.px-to-rem(20);
+      $lineH-18: f.px-to-rem(18);
+      $lineH-16: f.px-to-rem(16);
+  
+  h1, .heading1 {
+      font-size: clamp($font-28, 8vw, $font-32);
+      line-height: clamp($lineH-36, 9vw, $lineH-40);
+      font-weight: $font-bold;
+  }
+
+  h2, .heading2 {
+    font-size: clamp($font-20, 6vw, $font-24);
+    line-height: clamp($lineH-28, 8vw, $lineH-32);
+    font-weight: $font-bold;
+  }
+
+  h3, .heading3, .labels, .buttons {
+    font-size: clamp($font-13, 4vw, $font-14);
+    line-height: clamp($lineH-20, 6vw, $lineH-22);
+    font-weight: $font-bold;
+  }
+
+  h4, .heading4, .table-header {
+    font-size: clamp($font-11, 3vw, $font-12);
+    line-height: clamp($lineH-16, 5vw, $lineH-18);
+    font-weight: $font-bold;
+    text-transform: uppercase;
+  }
+  
+  .p1 {
+    font-size: clamp($font-15, 4vw, $font-16);
+    line-height: clamp($lineH-26, 6vw, $lineH-28);
+    font-weight: $font-reg;
+  }
+
+  .p2 {
+    font-size: clamp($font-13, 4vw, $font-14);
+    line-height: clamp($lineH-20, 5vw, $lineH-22);
+    font-weight: $font-reg;
+  }
+
+  .p3 {
+    font-size: clamp($font-11, 3vw, $font-12);
+    line-height: clamp($lineH-16, 5vw, $lineH-18);
+    font-weight: $font-reg;
+  }
+
+  @mixin table-header {
+    @extend h4;
+
+}
+
+
+  

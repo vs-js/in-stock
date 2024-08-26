@@ -1,0 +1,48 @@
+@use './layouts' as l;
+@use './colors' as c;
+@use './functions' as f;
+@use './breakpoints' as b;
+
+@mixin input-layout {
+    height: f.px-to-rem(36);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: f.px-to-rem(20);
+    border: 1px solid c.$secondaryColor--cloud;
+    cursor: pointer;
+
+    &::placeholder {
+        color: c.$secondaryColor--slate; 
+    }
+
+    &:focus {
+        border: none;
+        outline: 1px solid c.$primaryColor--indigo;
+    }
+
+
+
+    @include b.breakpoint(tablet){
+        height: f.px-to-rem(38);
+        padding-inline: l.$size-16;
+        width: fit-content
+    }
+}
+
+@mixin button-layout {
+    height: f.px-to-rem(36);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: f.px-to-rem(20);
+    cursor: pointer;
+
+    @include b.breakpoint(tablet){
+        height: f.px-to-rem(38);
+        padding-inline: l.$size-16;
+        width: fit-content
+    }
+}

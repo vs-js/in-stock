@@ -1,0 +1,37 @@
+@use '../../styles/partials/' as p;
+
+.table-header {
+    @extend .heading4;
+    color: p.$secondaryColor--slate
+}
+
+.style-guide {
+    display: flex;
+    flex-direction: column;
+    gap: p.$size-40;
+    margin: p.$size-32;
+
+    &--type {
+        display: flex;
+        flex-direction: column;
+        gap: p.$size-8;
+    }
+
+    &--icons {
+        display: flex;
+        flex-direction: column;
+        gap: p.$size-8;
+    }
+
+    &--cta {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &--tags {
+        display: flex;
+        flex-direction: column;
+        gap: p.$size-8;
+    }
+}
