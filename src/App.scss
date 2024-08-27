@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --instock-black: #13182c;
+  --slate: #5c6673;
+  --graphite: #232940;
+  --green: #158463;
+  --instock-indigo: #2e6635;
+  --cloud: #bdc5e5;
+  --light-grey: #f7f8f9;
+  --red: #c94515;
+  --white: #ffffff;
+  --container-width: 80%;
+  --background-color-light-grey: #F7F8F9;
+  --text-secondary-color-cloud: #BDC5D5;
+  --text-secondary-color-slate: #5c6673;
+  --text-secondary-color-instock-indigo: #2E66E5
+}
+
+@font-face {
+  font-family: "TitilliumWeb-Regular";
+  src: url("./assets/font/TitilliumWeb-Regular.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TitilliumWeb-SemiBold";
+  src: url("./assets/font/TitilliumWeb-SemiBold.ttf") format("truetype");
+
+  font-style: normal;
+}
+
+.instock__main {
+  position: relative;
+
+  &__data {
+    background-color: #fff;
+    position: absolute;
+    top: calc(49%);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    min-height: 100%;
+    border-radius: 2px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+  }
+}

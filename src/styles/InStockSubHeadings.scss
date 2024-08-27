@@ -1,0 +1,142 @@
+.warehouse-table {
+    width: 100%;
+    border-collapse: collapse;
+
+    &__header {
+        display: flex;
+        align-items: center;
+        column-gap: 4px;
+        cursor: pointer;
+
+        img {
+            width: 15px;
+        }
+    }
+
+    h4 {
+        font-family: "TitilliumWeb-Regular", sans-serif;
+        font-size: 11px;
+        text-transform: uppercase;
+        color: var(--text-secondary-color-slate);
+    }
+
+    h5 {
+        font-family: "TitilliumWeb-Regular", sans-serif;
+        font-size: 12px;
+        text-transform: capitalize;
+        color: var(--text-secondary-color-slate);
+    }
+
+    h6 {
+        font-family: "TitilliumWeb-SemiBold", sans-serif;
+        font-size: 12px;
+        text-transform: capitalize;
+        color: var(--text-secondary-color-instock-indigo);
+        cursor: pointer;
+
+    }
+
+    h6:hover {
+        text-decoration: underline;
+    }
+
+    th,
+    td {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    &__inventory {
+
+        td {
+            padding: 20px 10px;
+        }
+    }
+
+    thead {
+        background-color: #f5f5f5;
+
+        /* Change this color to whatever you want */
+
+    }
+
+    th {
+        position: relative;
+    }
+
+
+
+    .action-button {
+        margin-right: 5px;
+        padding: 5px 10px;
+        cursor: pointer;
+    }
+
+    tbody {
+
+        :hover {
+            background-color: #F7F8F9;
+        }
+
+    }
+
+    /* Specific styling for the Warehouse column */
+    th:first-child,
+    td:first-child {
+        padding-left: 40px;
+        /* Set left padding to 60% for the Warehouse column */
+    }
+
+    .warehouse_name {
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 18px;
+        }
+    }
+
+    th:last-child,
+    td:last-child {
+        padding-right: 40px;
+        text-align: end;
+        /* Set right padding to 60% for the Action column */
+    }
+
+    th:last-child {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__action {
+        display: flex;
+        column-gap: 16px;
+        justify-content: flex-end;
+
+        img {
+            width: 20px;
+        }
+    }
+
+    &__in-stock,
+    &__out-of-stock {
+        padding: 0px 8px;
+        display: flex;
+        align-items: center;
+        height: 26px;
+        border-radius: 20px;
+    }
+
+    &__out-of-stock {
+        background-color: rgba(201, 69, 21, 0.07);
+        width: fit-content;
+        color: #C94515 !important;
+    }
+
+    &__in-stock {
+        background-color: rgba(21, 132, 99, 0.07);
+        width: fit-content;
+        color: #158463 !important;
+    }
+}
