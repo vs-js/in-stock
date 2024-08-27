@@ -1,0 +1,45 @@
+.in-stock-data-header {
+    width: 90%;
+    margin: auto;
+    padding: 40px 0px 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h1 {
+        font-family: 'TitilliumWeb-Regular', sans-serif;
+        font-size: 33px;
+        line-height: 44px;
+    }
+
+    &__controls {
+        display: flex;
+        align-items: center;
+
+        &__search {
+            display: flex;
+            align-items: center;
+            border: 1px solid grey;
+            border-radius: 20px;
+            padding: 4px 16px;
+            margin-right: 16px;
+
+            &__input {
+                outline: none;
+                border: none;
+                width: 220px;
+
+            }
+        }
+
+        &__button {
+            padding: 8px;
+            border-radius: 20px;
+            border: none;
+            outline: none;
+            color: #fff;
+            background-color: var(--instock-indigo-primary);
+            padding: 10px 16px;
+        }
+    }
+}

@@ -1,0 +1,103 @@
+.sub-heading-data-main {
+    width: 100%;
+
+    &__header {
+        width: 100%;
+        /* Full-width background */
+        padding: 8px 0px;
+        background-color: var(--background-color-light-grey);
+        /* Background color applied to the full width */
+
+        &-content {
+            width: 90%;
+            /* Center content with 90% width */
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            /* Using 12 columns for flexibility */
+            gap: 1rem;
+
+            /* Adjust as needed for spacing */
+            &__headers {
+                display: flex;
+                align-items: center;
+                column-gap: 4px;
+
+                img {
+                    width: 15px;
+                    height: 15px;
+                }
+
+                h5 {
+                    font-family: 'TitilliumWeb-Regular', sans-serif;
+                    font-size: 12px;
+                    text-transform: uppercase;
+                    color: var(--text-secondary-color-slate);
+                }
+            }
+        }
+    }
+
+    &__rows {
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        /* Using 12 columns for flexibility */
+        gap: 1rem;
+        /* Adjust as needed for spacing */
+    }
+}
+
+.sub-heading-item {
+
+    /* Adjust the grid-column span for each specific heading and data item */
+    &.heading-0 {
+        grid-column: span 2;
+
+    }
+
+    &.heading-1 {
+        grid-column: span 3;
+    }
+
+    &.heading-2 {
+
+        grid-column: span 2;
+    }
+
+    &.heading-3 {
+        grid-column: span 3;
+    }
+
+    &.heading-4 {
+        grid-column: span 2;
+    }
+}
+
+.warehouse-row {
+    display: contents;
+
+    /* Add padding to the entire row */
+    /* Allows children to align with grid columns */
+}
+
+
+.warehouse-name,
+.address,
+.contact-name,
+.contact-info,
+.action {
+    padding: 20px 0;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.warehouse-name {
+    h6 {
+        color: var(--text-secondary-color-instock-indigo);
+        font-family: "TitilliumWeb-SemiBold";
+        font-size: 12px;
+    }
+}
