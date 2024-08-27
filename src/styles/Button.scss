@@ -1,0 +1,32 @@
+.navbar_btn {
+  font-size: 14px;
+  font-family: "TitilliumWeb-Semibold", sans-serif;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  width: 107px;
+  height: 38px;
+
+  @media (max-width: 768px) {
+    width: 50%;
+    margin-top: 10px;
+    font-size: 13px;
+  }
+
+  &--selected {
+    background-color: var(--instock-black);
+    color: var(--white);
+    border-radius: 20px;
+  }
+
+  &--not-selected {
+    color: var(--slate);
+  }
+
+  &:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--white);
+    color: var(--white);
+  }
+}
